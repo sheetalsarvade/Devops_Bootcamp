@@ -1,0 +1,41 @@
+thor@host01 ~$ id
+uid=1001(thor) gid=1001(thor) groups=1001(thor),10(wheel)
+thor@host01 ~$ su ansible
+su: user ansible does not exist or the user entry does not contain all the required fields
+thor@host01 ~$ ssh thor@172.16.238.3
+ssh: connect to host 172.16.238.3 port 22: Connection refused
+
+You can find some explanations for typical errors at this link:
+            https://red.ht/support_rhel_ssh
+thor@host01 ~$ sudo su -
+root@host01 ~# ls
+anaconda-ks.cfg  anaconda-post-nochroot.log  anaconda-post.log  original-ks.cfg
+root@host01 ~# cd /home/thor
+root@host01 /home/thor# curl -s https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+root@host01 /home/thor# ls
+root@host01 /home/thor# wget -o dummy.pdf https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+root@host01 /home/thor# ls
+dummy.pdf  dummy.pdf.1
+root@host01 /home/thor# uname
+Linux
+root@host01 /home/thor# uname -a
+Linux host01.mycorp.org 5.15.0-1083-gcp #92~20.04.1-Ubuntu SMP Tue Apr 29 09:12:55 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux      
+root@host01 /home/thor# /etc/                               
+root@host01 /home/thor# /etc/*release*
+-bash: /etc/centos-release: Permission denied
+root@host01 /home/thor# cat /etc/os-release
+NAME="CentOS Stream"
+VERSION="9"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="9"
+PLATFORM_ID="platform:el9"
+PRETTY_NAME="CentOS Stream 9"
+ANSI_COLOR="0;31"
+LOGO="fedora-logo-icon"
+CPE_NAME="cpe:/o:centos:centos:9"
+HOME_URL="https://centos.org/"
+BUG_REPORT_URL="https://issues.redhat.com/"
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux 9"
+REDHAT_SUPPORT_PRODUCT_VERSION="CentOS Stream"
+root@host01 /home/thor# 
