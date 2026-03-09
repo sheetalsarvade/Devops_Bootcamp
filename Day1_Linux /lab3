@@ -1,0 +1,13 @@
+    cd /opt
+     ls
+      sudo rpm -i /opt/ftp-0.17-89.el9.x86_64.rpm
+      rpm -qa
+      rpm -qa | grep ftp
+      clear
+      rpm -qa | grep ftp
+      rpm -e ftp-0.17-89.el9.x86_64
+      yum install maven
+     yum list maven
+     rum remove maven
+    yum remove maven
+     yum install -y -v maven-1:3.6.3-19.el9.noarch
