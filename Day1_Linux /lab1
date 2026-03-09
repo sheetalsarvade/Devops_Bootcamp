@@ -1,0 +1,31 @@
+Lab 1 commands 
+
+thor@host01 ~$ ls
+test_dir
+thor@host01 ~$ cd test_dir/
+thor@host01 ~/test_dir$ ls
+dir1  dir2  dir3  test_file1.txt  test_file2.txt  test_file4.txt
+thor@host01 ~/test_dir$ cd /home/thor/
+thor@host01 ~$ ls
+test_dir
+thor@host01 ~$ touch empty_file.txt
+thor@host01 ~$ ls
+empty_file.txt  test_dir
+thor@host01 ~$ vim contents_file.txt
+-bash: vim: command not found
+thor@host01 ~$ cd /home/thor
+thor@host01 ~$ vi contents_file.txt
+thor@host01 ~$ mkdir empty_dir
+thor@host01 ~$ mkdir /home/thor/asia/india/bangalore
+mkdir: cannot create directory ‘/home/thor/asia/india/bangalore’: No such file or directory
+thor@host01 ~$ mkdir -p /home/thor/asia/india/bangalore
+thor@host01 ~$ cp /home/thor/asia/bangalore.txt /home/thor/asia/india/bangalore
+thor@host01 ~$ cp -f /home/thor/asia/india/bangalore /home/thor
+cp: -r not specified; omitting directory '/home/thor/asia/india/bangalore'
+thor@host01 ~$ cp -r /home/thor/asia/india/bangalore /home/thor
+thor@host01 ~$ cd /home/thor/asia/
+thor@host01 ~/asia$ ls
+bangalore.txt  india
+thor@host01 ~/asia$ rm -rf bangalore.txt 
+thor@host01 ~/asia$ rm -rf /home/thor/asia/india/bangalore
+thor@host01 ~/asia$ 
